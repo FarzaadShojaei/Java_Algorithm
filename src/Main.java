@@ -21,12 +21,16 @@ public class Main {
      //   System.out.println(cookieTwo.getColor());
 
 
-       LinkedList mylinkedlist=new LinkedList(1);
-
-
+       LinkedList mylinkedlist=new LinkedList(2);
+        mylinkedlist.append(1);
         mylinkedlist.append(2);
+        mylinkedlist.append(3);
 
+
+        mylinkedlist.prepend(1);
         System.out.println(mylinkedlist.removeLast().value);
+        System.out.println(mylinkedlist.removeFirst().value);
+        System.out.println(mylinkedlist.get(2) + "\n");
         mylinkedlist.printList();
 
 
