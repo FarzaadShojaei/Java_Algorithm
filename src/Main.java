@@ -30,6 +30,7 @@ public class Main {
         mylinkedlist.prepend(1);
         System.out.println(mylinkedlist.removeLast().value);
         System.out.println(mylinkedlist.removeFirst().value);
+        mylinkedlist.set(1,4);
         System.out.println(mylinkedlist.get(2) + "\n");
         mylinkedlist.printList();
 
