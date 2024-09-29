@@ -49,6 +49,26 @@ public class LinkedList {
         return false;
     }
 
+    public boolean insert(int index,int value){
+        if(index < 0 || index > length) return false;
+        if(index ==0){
+            prepend(value);
+            return true;
+        }
+        if(index == length){
+            append(value);
+            return false;
+        }
+        Node newNode= new Node(value);
+        Node temp=get(index -1);
+        newNode.next=temp.next;
+        temp.next=newNode;
+        length++;
+        return true;
+
+
+    }
+
     public Node removeLast(){
        if (length == 0) return null;
        Node temp=head;
@@ -118,9 +138,7 @@ public class LinkedList {
         length++;
     }
 
-    public boolean insert(int index,int value){
-        return false;
-    }
+
 
 
 
