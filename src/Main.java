@@ -32,6 +32,7 @@ public class Main {
         System.out.println(mylinkedlist.removeFirst().value);
         mylinkedlist.set(1,4);
         System.out.println(mylinkedlist.get(2) + "\n");
+        mylinkedlist.insert(1,1);
         mylinkedlist.printList();
 
 
